@@ -1,264 +1,155 @@
-/* --------------------
-     GLOBAL
--------------------- */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doing What I LOVE – Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <!-- Example playful/handwritten fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Permanent+Marker&family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
+</head>
 
-html {
-    scroll-behavior: smooth;
-}
+<body>
 
-body {
-    font-family: 'Fredoka', sans-serif;
-    background: #0f2a2e;
-    color: #fff;
-}
+<!-- ===================== HERO ===================== -->
+<section id="hero">
+    <div class="sun"></div>
 
-/* Headings */
-h1, h2, h3 {
-    font-family: 'Patrick Hand', cursive;
-}
+    <h1 class="hero-title">
+        Doing What I <span>LOVE</span>
+    </h1>
 
-/* --------------------
-     HERO
--------------------- */
+    <h2 class="hero-sub">an art-folio by <span class="signature">Your Name</span></h2>
 
-#hero {
-    height: 100vh;
-    padding: 60px 20px;
-    background: #0f2b2e;
-    text-align: center;
-    position: relative;
-}
+    <img class="laptop" src="images/laptop-placeholder.png" alt="Laptop Illustration">
 
-.sun {
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, #ffdd5c, #ff9f29);
-    border-radius: 50%;
-    margin: 0 auto;
-}
+    <!-- decorative items -->
+    <div class="hero-decor star-1"></div>
+    <div class="hero-decor tape-1"></div>
+    <div class="hero-decor paperclip"></div>
+</section>
 
-.hero-title {
-    font-size: 4rem;
-    margin-top: 20px;
-}
+<!-- ===================== STICKY NAV ===================== -->
+<nav id="sticky-nav">
+    <ul>
+        <li><a href="#work" class="nav-button green-btn">My Work</a></li>
+        <li><a href="#about" class="nav-button pink-btn">About Me</a></li>
+        <li><a href="#education" class="nav-button tan-btn">Education</a></li>
+    </ul>
 
-.hero-title span {
-    color: #2cc4c4;
-    font-family: 'Permanent Marker', cursive;
-}
+    <div class="nav-stars star-a"></div>
+    <div class="nav-stars star-b"></div>
+</nav>
 
-.hero-sub {
-    margin-top: 10px;
-    font-size: 1.6rem;
-}
+<!-- ===================== MY WORK ===================== -->
+<section id="work">
+    <h2 class="section-title cork-title">My Work</h2>
 
-.signature {
-    color: #d93333;
-    font-family: 'Permanent Marker', cursive;
-}
+    <div class="cork-board">
 
-.laptop {
-    width: 200px;
-    margin-top: 30px;
-}
+        <div class="work-item polaroid">
+            <h3>Artwork</h3>
+            <img src="images/art-placeholder.png" alt="">
+            <div class="pushpin"></div>
+        </div>
 
-/* Decorative placeholders */
-.hero-decor {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-}
+        <div class="work-item filmstrip">
+            <h3>Digital Video</h3>
+            <img src="images/video-placeholder.png" alt="">
+            <div class="pushpin"></div>
+        </div>
 
-/* --------------------
-    STICKY NAV
--------------------- */
+        <div class="work-item deviceframe">
+            <h3>Apps & Sites</h3>
+            <img src="images/app-placeholder.png" alt="">
+            <div class="pushpin"></div>
+        </div>
 
-#sticky-nav {
-    position: sticky;
-    top: 0;
-    background: url('images/cork-texture.jpg');
-    padding: 15px;
-    z-index: 2000;
-    box-shadow: 0 4px 4px rgba(0,0,0,0.4);
-}
+        <div class="work-item polaroid">
+            <h3>Photography</h3>
+            <img src="images/photo-placeholder.png" alt="">
+            <div class="pushpin"></div>
+        </div>
 
-#sticky-nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    list-style: none;
-}
+        <div class="sticky-note">
+            Click any category to view more!
+        </div>
 
-.nav-button {
-    padding: 12px 25px;
-    border-radius: 50%;
-    color: #000;
-    text-decoration: none;
-    font-family: 'Patrick Hand';
-    font-size: 1.3rem;
-    background: #ccc;
-    border: 3px solid #000;
-}
+    </div>
+</section>
 
-/* Button colors = sewing buttons */
-.green-btn { background: #a8d672; }
-.pink-btn { background: #ff99b9; }
-.tan-btn { background: #d4b18a; }
+<!-- ===================== ABOUT ME ===================== -->
+<section id="about">
+    <div class="notebook-paper">
+        <div class="spiral"></div>
 
-/* --------------------
-    MY WORK – CORK BOARD
--------------------- */
+        <h2 class="section-title">About Me</h2>
 
-#work {
-    padding: 80px 20px;
-    background: url('images/cork-board.jpg');
-    background-size: cover;
-    color: #000;
-}
+        <h1 class="name-background">YOUR NAME</h1>
 
-.cork-title {
-    text-align: center;
-    color: #000;
-    font-size: 3rem;
-}
+        <p class="bio-text">
+            This is where your introduction and biography will go.
+            The notebook paper look gives this section your scrapbook personality.
+        </p>
 
-.cork-board {
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 40px;
-}
+        <img class="flag" src="images/flag-placeholder.png" alt="">
+        <div class="brick-texture"></div>
 
-.work-item {
-    position: relative;
-    background: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 10px 6px rgba(0,0,0,0.3);
-}
+    </div>
+</section>
 
-.pushpin {
-    width: 25px;
-    height: 25px;
-    background: red;
-    border-radius: 50%;
-    position: absolute;
-    top: -10px;
-    left: calc(50% - 12px);
-}
+<!-- ===================== EDUCATION ===================== -->
+<section id="education">
+    <div class="torn-paper-top"></div>
 
-/* Frames */
-.polaroid {
-    border: 10px solid white;
-    box-shadow: 0 8px 15px rgba(0,0,0,0.5);
-}
+    <h2 class="section-title edu-title">Education</h2>
 
-.filmstrip {
-    border: 8px dashed black;
-}
+    <div class="certificate-box">
+        <h3>Your Degree Here</h3>
+        <p>Major: Example Major</p>
+        <p>Graduation Year: 20XX</p>
+    </div>
+</section>
 
-.deviceframe {
-    border: 8px solid #333;
-    border-radius: 20px;
-}
+<!-- ===================== SKILLS ===================== -->
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
 
-/* Sticky note */
-.sticky-note {
-    background: #fff799;
-    padding: 20px;
-    font-family: 'Patrick Hand';
-    font-size: 1.4rem;
-    transform: rotate(-3deg);
-    box-shadow: 0 10px 6px rgba(0,0,0,0.3);
-}
+    <div class="skill">
+        <span>Drawing</span>
+        <div class="stars">★★★★★</div>
+    </div>
 
-/* --------------------
-    ABOUT ME – NOTEBOOK
--------------------- */
+    <div class="skill">
+        <span>Video Editing</span>
+        <div class="stars">★★★★☆</div>
+    </div>
 
-#about {
-    padding: 80px 20px;
-    color: #000;
-    background: #faf5e6;
-}
+    <div class="skill">
+        <span>Web Design</span>
+        <div class="stars">★★★★★</div>
+    </div>
+</section>
 
-.notebook-paper {
-    background: url('images/notebook-paper.jpg');
-    background-size: cover;
-    padding: 60px;
-    position: relative;
-    max-width: 900px;
-    margin: auto;
-}
+<!-- ===================== CONTACT ===================== -->
+<section id="contact">
+    <h2 class="contact-title">CONTACT ME!</h2>
 
-.spiral {
-    position: absolute;
-    left: -30px;
-    top: 0;
-    width: 30px;
-    height: 100%;
-    background: url('images/spiral-holes.png') repeat-y;
-}
+    <div class="starburst"></div>
 
-.name-background {
-    font-size: 6rem;
-    opacity: 0.2;
-    font-family: 'Permanent Marker';
-    text-align: center;
-}
+    <div class="contact-info">
+        <p>Email: yourname@example.com</p>
+        <p>Phone: (555) 555-5555</p>
+    </div>
 
-.bio-text {
-    font-size: 1.3rem;
-    margin-top: 20px;
-}
+    <img class="building" src="images/building-placeholder.png" alt="">
 
-.flag {
-    width: 120px;
-    margin-top: 20px;
-}
+    <div class="social-stickers">
+        <div class="sticker">Instagram</div>
+        <div class="sticker">YouTube</div>
+        <div class="sticker">GitHub</div>
+    </div>
+</section>
 
-/* --------------------
-    EDUCATION
--------------------- */
-
-#education {
-    background: #3b2e1f;
-    padding: 100px 20px;
-    color: #fffbe0;
-    position: relative;
-}
-
-.torn-paper-top {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 40px;
-    background: url('images/torn-paper.png') repeat-x;
-}
-
-.certificate-box {
-    border: 4px solid #fff;
-    padding: 40px;
-    max-width: 600px;
-    margin: auto;
-    background: rgba(255,255,255,0.1);
-}
-
-/* --------------------
-    SKILLS
--------------------- */
-
-#skills {
-    padding: 80px;
-    background: #2b2b2b;
-}
-
-.skill {
-    margin: 20px auto;
-    max-w
+</body>
+</html>
