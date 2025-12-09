@@ -2,154 +2,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Doing What I LOVE – Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- Example playful/handwritten fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Permanent+Marker&family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artfolio – Isa Dagostino</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Special+Elite&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- ===================== HERO ===================== -->
-<section id="hero">
-    <div class="sun"></div>
+    <!-- HEADER / HERO -->
+    <header id="hero">
+        <div class="hero-content">
+            <h1 class="title">
+                <span class="doing">DOING</span>
+                <span class="love">WHAT I LOVE</span>
+                <span class="folio-label">an art–folio by</span>
+                <span class="name">ISA DAGOSTINO</span>
+            </h1>
 
-    <h1 class="hero-title">
-        Doing What I <span>LOVE</span>
-    </h1>
-
-    <h2 class="hero-sub">an art-folio by <span class="signature">Your Name</span></h2>
-
-    <img class="laptop" src="images/laptop-placeholder.png" alt="Laptop Illustration">
-
-    <!-- decorative items -->
-    <div class="hero-decor star-1"></div>
-    <div class="hero-decor tape-1"></div>
-    <div class="hero-decor paperclip"></div>
-</section>
-
-<!-- ===================== STICKY NAV ===================== -->
-<nav id="sticky-nav">
-    <ul>
-        <li><a href="#work" class="nav-button green-btn">My Work</a></li>
-        <li><a href="#about" class="nav-button pink-btn">About Me</a></li>
-        <li><a href="#education" class="nav-button tan-btn">Education</a></li>
-    </ul>
-
-    <div class="nav-stars star-a"></div>
-    <div class="nav-stars star-b"></div>
-</nav>
-
-<!-- ===================== MY WORK ===================== -->
-<section id="work">
-    <h2 class="section-title cork-title">My Work</h2>
-
-    <div class="cork-board">
-
-        <div class="work-item polaroid">
-            <h3>Artwork</h3>
-            <img src="images/art-placeholder.png" alt="">
-            <div class="pushpin"></div>
+            <div class="hero-collage">
+                <img src="assets/laptop.png" alt="" class="collage-item">
+                <img src="assets/hand.png" alt="" class="collage-item">
+                <img src="assets/tape.png" alt="" class="collage-item">
+            </div>
         </div>
 
-        <div class="work-item filmstrip">
-            <h3>Digital Video</h3>
-            <img src="images/video-placeholder.png" alt="">
-            <div class="pushpin"></div>
+        <!-- NAVIGATION -->
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#work">MY WORK</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#education">EDUCATION</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- WORK SECTION -->
+    <section id="work" class="section cork">
+        <h2 class="section-title">My Work</h2>
+
+        <div class="work-grid">
+            <div class="work-card">
+                <h3>Artwork</h3>
+                <img src="assets/placeholder.png" alt="">
+            </div>
+
+            <div class="work-card">
+                <h3>Digital Video</h3>
+                <img src="assets/placeholder.png" alt="">
+            </div>
+
+            <div class="work-card">
+                <h3>Apps & Sites</h3>
+                <img src="assets/placeholder.png" alt="">
+            </div>
+
+            <div class="work-card">
+                <h3>Photography</h3>
+                <img src="assets/placeholder.png" alt="">
+            </div>
         </div>
+    </section>
 
-        <div class="work-item deviceframe">
-            <h3>Apps & Sites</h3>
-            <img src="images/app-placeholder.png" alt="">
-            <div class="pushpin"></div>
-        </div>
-
-        <div class="work-item polaroid">
-            <h3>Photography</h3>
-            <img src="images/photo-placeholder.png" alt="">
-            <div class="pushpin"></div>
-        </div>
-
-        <div class="sticky-note">
-            Click any category to view more!
-        </div>
-
-    </div>
-</section>
-
-<!-- ===================== ABOUT ME ===================== -->
-<section id="about">
-    <div class="notebook-paper">
-        <div class="spiral"></div>
-
+    <!-- ABOUT ME -->
+    <section id="about" class="section paper">
         <h2 class="section-title">About Me</h2>
 
-        <h1 class="name-background">YOUR NAME</h1>
+        <div class="about-wrapper">
+            <h1 class="large-name">ISA</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac 
+                maximus eros. Suspendisse potenti. Integer dignissim lacus id urna 
+                placerat, in porttitor velit sagittis.
+            </p>
+        </div>
+    </section>
 
-        <p class="bio-text">
-            This is where your introduction and biography will go.
-            The notebook paper look gives this section your scrapbook personality.
+    <!-- EDUCATION -->
+    <section id="education" class="section torn-paper">
+        <h2 class="section-title">Education</h2>
+
+        <p>
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+            tempor incididunt ut labore et dolore magna aliqua…”
         </p>
 
-        <img class="flag" src="images/flag-placeholder.png" alt="">
-        <div class="brick-texture"></div>
+        <div class="edu-graphic">
+            <img src="assets/school.png" alt="">
+        </div>
+    </section>
 
-    </div>
-</section>
+    <!-- SKILLS -->
+    <section id="skills" class="section dark">
+        <h2 class="section-title">Skills</h2>
 
-<!-- ===================== EDUCATION ===================== -->
-<section id="education">
-    <div class="torn-paper-top"></div>
+        <div class="skills-list">
+            <div class="skill"><span class="stars">★★★★★</span> <span>Skill #1</span></div>
+            <div class="skill"><span class="stars">★★★★☆</span> <span>Skill #2</span></div>
+            <div class="skill"><span class="stars">★★★☆☆</span> <span>Skill #3</span></div>
+            <div class="skill"><span class="stars">★★★★★</span> <span>Skill #4</span></div>
+            <div class="skill"><span class="stars">★★★☆☆</span> <span>Skill #5</span></div>
+        </div>
+    </section>
 
-    <h2 class="section-title edu-title">Education</h2>
+    <!-- CONTACT -->
+    <section id="contact" class="section dark contact-area">
+        <h2 class="section-title">Contact Me!</h2>
 
-    <div class="certificate-box">
-        <h3>Your Degree Here</h3>
-        <p>Major: Example Major</p>
-        <p>Graduation Year: 20XX</p>
-    </div>
-</section>
-
-<!-- ===================== SKILLS ===================== -->
-<section id="skills">
-    <h2 class="section-title">Skills</h2>
-
-    <div class="skill">
-        <span>Drawing</span>
-        <div class="stars">★★★★★</div>
-    </div>
-
-    <div class="skill">
-        <span>Video Editing</span>
-        <div class="stars">★★★★☆</div>
-    </div>
-
-    <div class="skill">
-        <span>Web Design</span>
-        <div class="stars">★★★★★</div>
-    </div>
-</section>
-
-<!-- ===================== CONTACT ===================== -->
-<section id="contact">
-    <h2 class="contact-title">CONTACT ME!</h2>
-
-    <div class="starburst"></div>
-
-    <div class="contact-info">
-        <p>Email: yourname@example.com</p>
-        <p>Phone: (555) 555-5555</p>
-    </div>
-
-    <img class="building" src="images/building-placeholder.png" alt="">
-
-    <div class="social-stickers">
-        <div class="sticker">Instagram</div>
-        <div class="sticker">YouTube</div>
-        <div class="sticker">GitHub</div>
-    </div>
-</section>
+        <div class="contact-info">
+            <p><strong>Email:</strong> your.email@example.com</p>
+            <p><strong>Mobile:</strong> 123-456-7890</p>
+        </div>
+    </section>
 
 </body>
 </html>
